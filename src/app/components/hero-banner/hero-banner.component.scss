@@ -1,11 +1,45 @@
 .hero-banner {
-    height: 40vh;
+    height: 80vh;
     width: 100%;
     min-height: 10rem;
     max-height: 24rem;
-    background-color: aqua;
+    background-color: aqua; 
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Poppins;
+    z-index: 0;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+
+    &--home {
+        background-image: url("/assets/img/covers/home.jpg");  
+    }
+
+    &--about {
+        background-image: url("/assets/img/covers/about.jpg");  
+    }
+
+    &--contact {
+        background-image: url("/assets/img/covers/contact.jpg");  
+    }
+
+    &__text {
+        z-index: 1;
+    }
 }

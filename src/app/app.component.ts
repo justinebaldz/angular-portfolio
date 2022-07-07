@@ -5,43 +5,33 @@ import { LinkListenerService } from './link-listener.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'Portfolio';
   logo: string;
+  navItems: any;
+  navItemsArray: any;
 
   constructor(
     private linkService: LinkListenerService,
     private router: Router
   ) {
-    this.logo = "< Justine Baldonado />";
+    this.logo = '< Justine Baldonado />';
+
+    this.navItems = this.linkService.navItems;
+    this.navItemsArray = [];
+
+    Object.keys(this.navItems).forEach((key) => {
+      this.navItemsArray.push(this.navItems[key]);
+    });
+
+    // console.log('URL : ' + this.router.url);
+    // console.log(this.navItemsArray);
   }
-  navItems = [
-    {
-      name: "HOME",
-      link: "/",
-      icon: ""
-    },
-    {
-      name: "ABOUT",
-      link: "/about",
-      icon: ""
-    },
-    {
-      name: "PROJECTS",
-      link: "/projects",
-      icon: ""
-    },
-    {
-      name: "CONTACT",
-      link: "/contact",
-      icon: ""
-    }
-  ]
-  
+
   linkClick(item: any) {
     this.router.navigate([item['link']]);
-    this.linkService.setNavItem(item); 
+    this.linkService.setNavItem(item);
   }
 }
