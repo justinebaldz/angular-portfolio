@@ -1,0 +1,27 @@
+<div class="nav-listener-item nav-listener-item--about">
+    <header class="nav-header">
+        <div class="nav-header__top">
+            <div class="nav-header__text">
+                <h1 class="nav-header__title">ABOUT ME</h1>
+                <span class="nav-header__description">Hello, I am Justine Baldonado, A 3rd year student from University of Caloocan City. <br/> I create website using ReactJS,TailwindCSS, Bootstrap, PHP, MySQL and Native Java for Mobile Application.</span>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <button class="nav__button" (click)="changeAboutList('hobbies')">Hobbies</button>
+                        </li>
+                        <li>
+                            <button class="nav__button" (click)="changeAboutList('skills')">Skills</button>
+                        </li>
+                        <li>
+                            <button class="nav__button" (click)="changeAboutList('stack')">Tech Stack</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img class="nav-header__img" src="/assets/img/profile-pic.png"/>
+        </div>
+        <div class="nav-header__bottom">
+            <app-about-me-hobbies-skills [selectedList]="selectedAboutList"></app-about-me-hobbies-skills>
+        </div>
+    </header>
+</div>

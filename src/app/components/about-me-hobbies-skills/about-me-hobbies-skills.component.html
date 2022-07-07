@@ -1,0 +1,23 @@
+<div class="about">
+    <!-- <p>{{selectedList}}</p> -->
+
+    <ul *ngIf="selectedList === 'hobbies'" class="about__list">
+        <li *ngFor="let hobby of hobbies" class="about__item">
+            {{hobby}}
+        </li>
+    </ul>
+
+    <ul *ngIf="selectedList === 'skills'" class="about__list">
+        <li *ngFor="let skill of skills" class="about__item">
+            {{skill}}
+        </li>
+    </ul>
+
+    <ul *ngIf="selectedList === 'stack'" class="about__list about__list--stack">
+        <li *ngFor="let item of stack" class="about__item">
+            {{item}}
+        </li>
+    </ul>
+    
+    <img [src]="'/assets/img/' + selectedList + '.jpg'" class="about__img"/>
+</div>

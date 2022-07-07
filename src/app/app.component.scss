@@ -1,0 +1,47 @@
+@import "./global";
+
+.header { 
+    @include bg-dark-primary;
+    height: 80px;
+    width: 100%;
+    display: flex; 
+}
+
+.header__nav { 
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.header__logo {
+    @include Poppins;
+    @include text-primary;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    list-style: none;
+}
+
+.button {
+    @include text-primary;
+    @include Poppins;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none; 
+
+    &:hover {
+        @include bg-dark-secondary;
+        border-radius: .5rem;
+    } 
+}

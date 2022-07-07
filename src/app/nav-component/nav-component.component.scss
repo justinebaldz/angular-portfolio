@@ -1,0 +1,151 @@
+@import "../global";
+$nav : 7.3vh;
+
+
+.nav-listener-item {
+    font-family: Poppins;
+    // text-align: center;
+    // padding-top: 5rem;
+
+    width: 100%;
+    display: block;
+
+    &--home {
+        color: black;
+        background-image: url("/assets/img/home-profile-cover.png");
+    }
+
+    &--about {
+        @include text-primary;
+        @include bg-dark-secondary;
+        // background-image: url("/assets/img/home-profile-cover.png");
+    }
+
+    &--gold {
+        @include text-primary;
+        background-color: #d6c772;
+    }
+}
+
+.nav-header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 4rem;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-size: 60px;
+    }
+
+    &__description {
+        width: 85%;
+        font-family: Poppins;
+        font-size: 24px;
+        word-break: break-word;
+    }
+
+    &__img {
+        width: 25%;
+        margin-right: 4rem;
+    }
+}
+
+.nav {
+    margin-top: 2rem;
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__button {
+        @include bg-dark-primary;
+        @include text-primary;
+        @include Poppins;
+        width: 7rem;
+        height: 3rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        margin-right: .2rem;
+        justify-content: center;
+        border: none;
+        outline: none;
+
+        &:hover {
+            @include bg-light-secondary;
+            color: black;
+            border-radius: .5rem;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__intro {
+        font-size: 32px;
+    }
+
+    &__title {
+        font-size: 60px;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+    }
+
+    &__button {
+        @include bg-dark-primary;
+        @include text-primary;
+        @include Poppins;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        margin-top: .5rem;
+        justify-content: center;
+        border: none;
+        outline: none;
+
+        &:hover {
+            @include bg-light-secondary;
+            color: black;
+            border-radius: .5rem;
+            border: 1px solid black;
+        }
+    }
+
+    &__img {
+        width: 25%;
+    }
+
+}
+
+.scroll {
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+    float: right;
+}

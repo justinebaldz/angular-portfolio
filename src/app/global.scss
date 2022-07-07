@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@mixin Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+@mixin bg-dark-primary {
+    background-color: #112d4e;
+}
+
+@mixin bg-dark-secondary {
+    background-color: #3f72af;
+}
+
+@mixin bg-light-primary {
+    background-color: #f9f7f7;
+}
+
+@mixin bg-light-secondary {
+    background-color: #dbe2ef;
+}
+
+@mixin text-primary {
+    color: #f9f7f7;
+}
+
+@mixin text-secondary {
+    color: #dbe2ef;
+}
