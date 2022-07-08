@@ -1,12 +1,10 @@
 @import "../../global"; 
 
 .nav-listener-item {
-    font-family: Poppins;
-    // text-align: center;
-    // padding-top: 5rem;
-
+    font-family: Poppins;  
     width: 100%;
     display: block;
+    position: absolute;
 
     &--home {
         color: black;

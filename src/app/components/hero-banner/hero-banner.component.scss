@@ -2,8 +2,7 @@
     height: 80vh;
     width: 100%;
     min-height: 10rem;
-    max-height: 24rem;
-    background-color: aqua; 
+    max-height: 24rem; 
 
     display: flex;
     align-items: center;
@@ -25,14 +24,18 @@
         width: 100%;
         height: 100%;
         backdrop-filter: blur(5px);
-    }
+    } 
 
     &--home {
-        background-image: url("/assets/img/covers/home.jpg");  
+        background-image: url("/assets/img/home-profile-cover.png");  
     }
 
     &--about {
         background-image: url("/assets/img/covers/about.jpg");  
+    }
+
+    &--projects {
+        background-image: url("/assets/img/covers/project.jpg");  
     }
 
     &--contact {

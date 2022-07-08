@@ -5,6 +5,8 @@
     height: 80px;
     width: 100%;
     display: flex; 
+    position: fixed;
+    z-index: 9;
 }
 
 .header__nav { 
