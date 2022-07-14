@@ -7,18 +7,18 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li>
-                            <button class="nav__button" (click)="changeAboutList('hobbies')">Hobbies</button>
+                            <button [class]="(selectedAboutList === 'hobbies'  ? 'activebutton' : 'nav__button')" (click)="changeAboutList('hobbies')">Hobbies</button>
                         </li>
                         <li>
-                            <button class="nav__button" (click)="changeAboutList('skills')">Skills</button>
+                            <button [class]="(selectedAboutList === 'skills' ? 'activebutton' : 'nav__button')" (click)="changeAboutList('skills')">Skills</button>
                         </li>
                         <li>
-                            <button class="nav__button" (click)="changeAboutList('stack')">Tech Stack</button>
+                            <button [class]="(selectedAboutList === 'stack'  ? 'activebutton' : 'nav__button')" (click)="changeAboutList('stack')">Tech Stack</button>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <img class="nav-header__img" src="/assets/img/profile-pic.png"/>
+            <img class="nav-header__img" src="assets/img/profile-pic.png"/>
         </div>
         <div class="nav-header__bottom">
             <app-about-me-hobbies-skills [selectedList]="selectedAboutList"></app-about-me-hobbies-skills>

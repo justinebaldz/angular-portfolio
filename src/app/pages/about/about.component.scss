@@ -1,14 +1,14 @@
-@import "../../global"; 
+@import "../../global";
 
 .nav-listener-item {
-    font-family: Poppins;  
+    font-family: Poppins;
     width: 100%;
     display: block;
     position: absolute;
 
     &--home {
         color: black;
-        background-image: url("/assets/img/home-profile-cover.png");
+        background-image: url("~src/assets/img/home-profile-cover.png");
     }
 
     &--about {
@@ -64,6 +64,7 @@
 
 .nav {
     margin-top: 2rem;
+
     &__list {
         display: flex;
         list-style: none;
@@ -144,4 +145,11 @@
     font-weight: 200;
     font-size: 0.9rem;
     float: right;
+}
+
+.activebutton {
+    @include bg-light-secondary;
+    color: black;
+    border-radius: .5rem;
+    border: 1px solid black;
 }

@@ -25,9 +25,6 @@ export class AppComponent {
     Object.keys(this.navItems).forEach((key) => {
       this.navItemsArray.push(this.navItems[key]);
     });
-
-    // console.log('URL : ' + this.router.url);
-    // console.log(this.navItemsArray);
   }
 
   linkClick(item: any) {
