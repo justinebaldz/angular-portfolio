@@ -7,13 +7,13 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li>
-                            <button [class]="(selectedAboutList === 'hobbies'  ? 'activebutton' : 'nav__button')" (click)="changeAboutList('hobbies')">Hobbies</button>
+                            <button [class]="(selectedAboutList === 'hobbies'  ? 'nav__button activebutton' : 'nav__button')" (click)="changeAboutList('hobbies')">Hobbies</button>
                         </li>
                         <li>
-                            <button [class]="(selectedAboutList === 'skills' ? 'activebutton' : 'nav__button')" (click)="changeAboutList('skills')">Skills</button>
+                            <button [class]="(selectedAboutList === 'skills' ? 'nav__button activebutton' : 'nav__button')" (click)="changeAboutList('skills')">Skills</button>
                         </li>
                         <li>
-                            <button [class]="(selectedAboutList === 'stack'  ? 'activebutton' : 'nav__button')" (click)="changeAboutList('stack')">Tech Stack</button>
+                            <button [class]="(selectedAboutList === 'stack'  ? 'nav__button activebutton' : 'nav__button')" (click)="changeAboutList('stack')">Tech Stack</button>
                         </li>
                     </ul>
                 </nav>
