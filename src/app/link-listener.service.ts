@@ -29,11 +29,11 @@ export class LinkListenerService {
         link: '/projects',
         icon: ''
       },
-      '/contact' : {
-        name: 'CONTACT',
-        link: '/contact',
-        icon: ''
-      }
+      // '/contact' : {
+      //   name: 'CONTACT',
+      //   link: '/contact',
+      //   icon: ''
+      // }
     };
 
     // console.log(this.navItems["/contact]"]);
