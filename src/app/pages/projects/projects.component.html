@@ -3,12 +3,12 @@
     <div class="projects__container">
         <div class="projects__carousel">
             <button class="projects__button" (click)="prev()"><</button>
-            <img class="projects__images" width="600" [src]="{ projectPath }" />
+            <img class="projects__images" width="600" [src]="projectPath" />
             <button class="projects__button" (click)="next()">></button>
         </div>
         <div class="projects__content">
-            <div class="projects__heading">{{projectTitle}}</div>
-            <div class="projects__description">{{projectDescription}}</div>
+            <div class="projects__heading">{{ projectTitle }}</div>
+            <div class="projects__description">{{ projectDescription }}</div>
         </div>
     </div>
 </section>

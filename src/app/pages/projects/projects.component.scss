@@ -1,7 +1,7 @@
 @import '../../global';
 
 .projects {
-    width: 100%; 
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,8 @@
     &__title {
         font-family: Poppins;
         font-size: 48px;
-        font-weight: bold; 
-        margin-top: 80px; 
+        font-weight: bold;
+        margin-top: 80px;
     }
 
     &__carousel {
@@ -20,6 +20,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     &__container {
@@ -29,11 +30,6 @@
         align-items: center;
         gap: 4rem;
         font-family: Poppins;
-    }
-
-    &__heading {
-        font-size: 24px;
-        font-weight: 600;
     }
 
     &__button {
@@ -49,6 +45,17 @@
         &:hover {
             @include bg-dark-primary;
         }
+    }
+
+    &__content {
+        width: 500px;
+        position: relative;
+        float: right;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 600;
     }
 
 

@@ -46,4 +46,9 @@
         @include bg-dark-secondary;
         border-radius: .5rem;
     } 
+
+    &--active {
+        @include bg-dark-secondary;
+        border-radius: .5rem;
+    }
 }

@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Portfolio';
   logo: string;
   navItems: any;
-  navItemsArray: any;
+  navItemsArray: any; 
 
   constructor(
     private linkService: LinkListenerService,
@@ -29,6 +29,6 @@ export class AppComponent {
 
   linkClick(item: any) {
     this.router.navigate([item['link']]);
-    this.linkService.setNavItem(item);
+    this.linkService.setNavItem(item);  
   }
 }
