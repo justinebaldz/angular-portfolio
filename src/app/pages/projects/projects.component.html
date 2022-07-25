@@ -2,9 +2,9 @@
     <span class="projects__title">PROJECTS</span>
     <div class="projects__container">
         <div class="projects__carousel">
-            <button class="projects__button" (click)="prev()"><</button>
+            <button class="projects__button" (click)="prev()"><fa-icon [icon]="prevIcon"></fa-icon></button>
             <img class="projects__images" width="600" [src]="projectPath" />
-            <button class="projects__button" (click)="next()">></button>
+            <button class="projects__button" (click)="next()"><fa-icon [icon]="nextIcon"></fa-icon></button>
         </div>
         <div class="projects__content">
             <div class="projects__heading">{{ projectTitle }}</div>

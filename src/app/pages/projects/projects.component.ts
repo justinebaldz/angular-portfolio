@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -14,8 +15,10 @@ export class ProjectsComponent implements OnInit {
   projectDescription: string;
   projectPath: string;
   projectLink: any;
+  prevIcon = faAngleLeft;
+  nextIcon = faAngleRight;
 
-  constructor(private router: Router) {
+  constructor(private router: Router) { 
     this.i = 0;
     this.projects = [
       {

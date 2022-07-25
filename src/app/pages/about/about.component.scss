@@ -25,6 +25,7 @@
     &__title {
         font-family: Poppins;
         font-size: 60px;
+        font-weight: bold;
     }
 
     &__description {
@@ -32,6 +33,7 @@
         font-family: Poppins;
         font-size: 24px;
         word-break: break-word;
+        line-height: 28px;
     }
 
     &__img {
@@ -69,51 +71,51 @@
     }
 }
 
-.container {
-    display: flex;
-    margin: auto;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
+// .container {
+//     display: flex;
+//     margin: auto;
+//     height: 100vh;
+//     align-items: center;
+//     justify-content: space-evenly;
 
-    &__intro {
-        font-size: 32px;
-    }
+//     &__intro {
+//         font-size: 32px;
+//     }
 
-    &__title {
-        font-size: 60px;
-    }
+//     &__title {
+//         font-size: 60px;
+//     }
 
-    &__subtitle {
-        font-size: 32px;
-    }
+//     &__subtitle {
+//         font-size: 32px;
+//     }
 
-    &__button {
-        @include bg-dark-primary;
-        @include text-primary;
-        @include Poppins;
-        width: 10rem;
-        height: 3rem;
-        font-size: 1rem;
-        border-radius: .5rem;
-        margin-top: .5rem;
-        justify-content: center;
-        border: none;
-        outline: none;
+//     &__button {
+//         @include bg-dark-primary;
+//         @include text-primary;
+//         @include Poppins;
+//         width: 10rem;
+//         height: 3rem;
+//         font-size: 1rem;
+//         border-radius: .5rem;
+//         margin-top: .5rem;
+//         justify-content: center;
+//         border: none;
+//         outline: none;
 
-        &:hover {
-            @include bg-light-secondary;
-            color: black;
-            border-radius: .5rem;
-            border: 1px solid black;
-        }
-    }
+//         &:hover {
+//             @include bg-light-secondary;
+//             color: black;
+//             border-radius: .5rem;
+//             border: 1px solid black;
+//         }
+//     }
 
-    &__img {
-        width: 25%;
-    }
+//     &__img {
+//         width: 25%;
+//     }
 
-}
+// }
 
 .scroll {
     position: absolute;
