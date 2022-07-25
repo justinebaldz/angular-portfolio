@@ -58,5 +58,25 @@
         font-weight: 600;
     }
 
+    &__view {
+        @include bg-dark-primary;
+        @include text-primary;
+        @include Poppins;
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        margin-top: .5rem;
+        justify-content: center;
+        border: none;
+        outline: none;
+        font-style: none;
+
+        &:hover {
+            @include bg-light-secondary;
+            color: black;
+            border-radius: .5rem;
+        }
+    }
 
 }
